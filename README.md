@@ -1,6 +1,6 @@
 # 안녕하세요, 이동욱입니다 👋
 
-> RF 쪽 역량을 쌓아 방산/우주 직무에서 막연하게 일하고 싶은 숭실대학교 전자공학과 2학년 학생입니다. 아직 뭣도 모르지만 하나씩 채워보려 합니다.
+> RF 쪽 역량을 쌓아 방산/우주 직무에서 막연하게 일하고 싶은 숭실대학교 전자공학과 2학년 학생입니다.
 
 ## 🛠 Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
