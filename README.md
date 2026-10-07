@@ -1,33 +1,73 @@
-# 안녕하세요, 이동욱입니다 👋
-> 숭실대학교 전자공학과 3학년입니다.
+# 이동욱 (Dongwook Lee)
 
-## 🛠 Tech Stack
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat&logo=arduino&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+숭실대학교 전자정보공학부 전자공학전공 3학년 · 학번 20232936
+lduiwm04@soongsil.ac.kr · github.com/ldu04
 
-## 📌 Projects
-| 프로젝트 | 설명 | 성과 | 기술 |
-|---------|------|------|------|
-| [불사 (不死)](https://github.com/ldu04/2026ESWContest_free_HWAJUNGSAENGRYEON) | 노드의 죽음을 데이터로 바꾸는 자가치유 산불 감시 메시 — ESP32 16노드 실물 실증 | 화선 방향 오차 **2.85°** · 16노드 중 **13노드**가 사망 전 경보 수신 | ESP32 · C++ · painlessMesh · Python |
-| [carla-project](https://github.com/ldu04/carla-project) | YOLOv8 + C-V2X 기반 대형차 전방 시야 공유 시스템 | — | Python · CARLA · YOLOv8 |
-| [cj-box-size-estimation](https://github.com/ldu04/cj-box-size-estimation) | 단일 CCTV 영상 기반 화물 3D 크기 추정 | 공모전 **39팀 중 6위** | Python · YOLO · ONNX |
-| [nom_detector](https://github.com/ldu04/nom_detector) | 웹캠 기반 실시간 거북목 감지 및 3단계 경고 시스템 | — | Python · MediaPipe |
-| [p5js-portfolio](https://github.com/ldu04/p5js-portfolio) | p5.js 사이버강의 실습 모음 | — | JavaScript |
+**관심 분야** — RF/mmWave · 안테나·메타표면 · 레이더 센싱·이미징 · ISAC
 
-### 🔥 불사 (不死) — 제24회 임베디드SW경진대회 자유공모 출품작
-산불 현장에서 센서 노드는 반드시 타 죽습니다. 그 죽음을 손실로 버리지 않고,
-**노드가 죽은 시각과 좌표를 화재 관측 데이터로 역이용**하는 시스템입니다.
+---
 
-- **실물 실증** — ESP32 16노드를 20 cm 간격 4×4 격자에 깔고, 열풍기로 23분에 걸쳐 순차 소사. 재촬영 없이 1회차 성공
-- **화선 추정** — 죽은 노드 좌표에 평면을 적합해 방향·속도 역산. 방향 오차 **2.85°**, 속도 오차 **+1.67%**
-- **사전 경보** — 16노드 중 **13노드**가 자기가 죽기 전에 도달 예상 경보 수신 (평균 351초 전)
-- **자가치유 라우팅** — 중계 노드 강제 이탈 시 재부팅 없이 **15.9초** 만에 메시 재구성
-- **오탐 방어** — 통신두절과 실제 소손을 임종신호·이웃 투표·자기 온도로 구분
-- 펌웨어(C++/painlessMesh) · 게이트웨이 추정기(Python) · 실시간 관제 대시보드(JS Canvas) 전 계층 구현, 테스트 60건
+## 해 온 일 한 줄
 
-## 📫 Contact
-- Email: bluepoint74@naver.com
+센서와 영상이 남긴 흔적에서 물리량을 추정하고, **그 추정이 틀렸는지를 먼저 확인하는 검증
+체계를 같이 만드는 것**을 해 왔습니다. 아래 세 건 모두 수치가 아니라 수치의 측정 조건과
+한계를 저장소에 함께 적어 두었습니다.
+
+## 프로젝트
+
+| 저장소 | 한 줄 | 대표 수치 | 규모 |
+|---|---|---|---|
+| [불사 (不死)](https://github.com/ldu04/2026ESWContest_free_HWAJUNGSAENGRYEON) | 노드가 타 죽은 시각·좌표를 모아 산불 화선의 방향·속도를 역산하는 자가치유 메시 | 화선 방향 오차 **2.85°** | 1인 수행 · ESP32 16노드 실물 실증 |
+| [트럭너머 (VIS)](https://github.com/ldu04/vis-forward-warning) | 대형차 전방 카메라가 YOLO 로 위험을 판단해 뒤차에 UDP 로 알리는 시야 공유 | 종단간 지연 중앙값 **107.4 ms** | 2인 팀 「숭숭카」 팀장 |
+| [CJ 화물 크기 추정](https://github.com/ldu04/cj-box-size-estimation) | 단일 CCTV 영상에서 컨베이어 박스의 W×D×H(cm)를 추정하는 엔드투엔드 파이프라인 | 최종 평가 **39팀 중 6위** (입상 아님) | 3인 중 1인 · 독립 파이프라인 전담 |
+
+### 불사 — 제24회 임베디드SW경진대회 자유공모 (2026.08)
+
+산불 현장의 센서 노드는 반드시 타 죽습니다. 그 죽음을 손실로 버리지 않고 **노드가 자기
+시계로 각인한 사망시각과 좌표를 화재 관측 데이터로 역이용**합니다. 사망시각들이 만드는
+도착시각장의 기울기에서 화선의 방향·속도·도착예정시각이 나옵니다.
+
+- 화선 방향 오차 **2.85°** · 속도 오차 **+1.67 %** · 사망 검출 **16/16 노드**
+- ESP32 16노드를 4×4 격자에 깔고 실제 열원으로 순차 소사시킨 **실물 실증** (1회차 성공)
+- 위 수치는 저장소 안의 원자료만으로 재계산된다 — `python tools/recompute_run205330.py`
+- 펌웨어(C++/painlessMesh) · 게이트웨이 추정기(Python) · 관제 대시보드(JS) 전 계층 구현
+- 시연영상 <https://youtu.be/ZDX_D-6ZaC0> · GPL-3.0-only
+
+### 트럭너머 — 대형차 전방 위험 경고
+
+대형차가 뒤차의 시야를 막는 구조적 문제를, 전용 하드웨어 없이 **스마트폰 온디바이스
+추론 + IP 기반 UDP** 만으로 성립시킨 구조입니다. 공모전 제안서의 근거 자료로 공개했고,
+측정 조건과 미달 항목을 각 실험 폴더에 같이 적었습니다.
+
+- 종단간 지연 **중앙값 107.4 ms / p95 168.8 ms** (완전보수 기준, 실기기 측정)
+- 지연 **전체의 76.6 % 가 추론 구간** — 통신이 아니라 연산이 병목이라는 뜻
+- 🔴 표준 C-V2X / ETSI ITS-G5 가 **아니다.** 일반 IP 망 위의 UDP 통신이다
+- 실차 검증 미완료 · 정확도 지표(mAP) 미산출 — 저장소에 한계로 명시
+- MIT
+
+### CJ 화물 크기 추정 — CJ대한통운 미래기술챌린지 2026 (2026.07)
+
+단일 CCTV 영상에서 박스를 탐지·추적하고 CNN 회귀로 절대 치수를 cm 단위로 추정합니다.
+3인 팀에서 **독립 파이프라인 하나를 처음부터 끝까지 혼자 담당**했습니다.
+
+- Public 리더보드 **47팀 중 9위** · 최종 평가 **39팀 중 6위** (입상 아님)
+- 손실을 채점 방식에 맞춰 설계 — cm 공간 SmoothL1 을 **w/d/h 6가지 순열 중 최솟값**으로
+- focal length 추정 보조망으로 픽셀-cm 변환을 영상별로 보정
+- 학습 크롭이 부족해 탐지기로 자동 라벨 확장 (`auto_match`)
+
+---
+
+## 그 외
+
+- [nom_detector](https://github.com/ldu04/nom_detector) — 웹캠 기반 거북목 감지, 3단계 경고 (전자공학기초실험)
+- [p5js-portfolio](https://github.com/ldu04/p5js-portfolio) — p5.js 실습 모음
+
+## 작업 방식
+
+저장소의 코드와 문서 작성에 AI 도구(Claude Code)를 사용했습니다. 사용 규약은 각
+저장소의 `CLAUDE.md` 에 그대로 두었습니다. 설계 판단과 측정값 검증은 직접 했고,
+반증된 가설과 실패한 회차도 지우지 않고 `docs/DECISIONS.md` 에 남겼습니다.
+
+## 연락
+
+lduiwm04@soongsil.ac.kr
