@@ -1,6 +1,6 @@
 # 이동욱 (Dongwook Lee)
 
-숭실대학교 전자정보공학부 전자공학전공 3학년 · 학번 20232936
+숭실대학교 전자정보공학부 전자공학전공 3학년
 lduiwm04@soongsil.ac.kr · github.com/ldu04
 
 **관심 분야** — RF/mmWave · 안테나·메타표면 · 레이더 센싱·이미징 · ISAC
