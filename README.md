@@ -7,8 +7,6 @@ lduiwm04@soongsil.ac.kr · github.com/ldu04
 
 ---
 
-## 해 온 일 한 줄
-
 ## 프로젝트
 
 | 저장소 | 한 줄 | 대표 수치 | 규모 |
